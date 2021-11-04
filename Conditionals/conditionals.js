@@ -22,3 +22,35 @@ if (dayOfWeek === "Friday") {
 } else {
   console.log("Work sucks, I know...");
 }
+
+//Password must be 6 or more characters
+//Password cannot include space
+//Demonstrating nesting
+const password = prompt("please create a new password");
+
+if (password.length >= 6) {
+  console.log("Great password!");
+  if (password.indexOf(" ") === -1) {
+    console.log("Valid password");
+  } else {
+    console.log("Cannot have spaces!!!");
+  }
+} else {
+  console.log("Password is too short");
+}
+
+//Ask Will to explain this
+
+const num = 102;
+
+if (num <= 100) {
+  if (num >= 50) {
+    console.log("HEY!");
+  }
+} else {
+  if (num < 103) {
+    if (num % 2 === 0) {
+      console.log("YOU GOT ME!");
+    }
+  }
+}
