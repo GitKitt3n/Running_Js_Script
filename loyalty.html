@@ -1,0 +1,104 @@
+<style>
+  @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+</style>
+<div class="rewards_container">
+  {% comment %}
+  <header class="page__header page__header--centered">
+    <h1 class="page__title heading h1">{{ page.title }}</h1>
+  </header>
+  {% endcomment %} {% comment %}
+  <div class="page__content rte">{{ page.content }}</div>
+  {% endcomment %}
+
+  <div
+    id="stamped-rewards-widget"
+    data-widget-type="rewards-summary"
+    data-label-greeting-anonymous="Cum join the party!"
+  ></div>
+  <div
+    id="stamped-rewards-widget"
+    data-widget-type="rewards-how-it-works"
+  ></div>
+  <div id="stamped-rewards-widget" data-widget-type="rewards-activities"></div>
+
+  <div id="stamped-rewards-widget" data-widget-type="rewards-earnings-v2"></div>
+
+  <div
+    id="stamped-rewards-widget"
+    data-widget-type="rewards-spendings-v2"
+  ></div>
+  <div id="stamped-rewards-widget" data-widget-type="rewards-referral"></div>
+
+  <h1 class="loyalty-faq">FAQ</h1>
+  <section class="faq-menu">
+    <button class="faq-collapsible">How do I join your loyalty program?</button>
+    <div class="content">
+      <p>
+        Joining our free rewards program is easy! If you haven't already, just
+        create an account with the store to get started. Once you’ve done that,
+        you’ll have full access to all of the exciting ways we offer to earn
+        points! Each time you come back, just make sure that you're logged in to
+        track your progress, redeem points, and much more.
+      </p>
+    </div>
+    <button class="faq-collapsible">How can I earn Points?</button>
+    <div class="content">
+      <p>
+        While logged in, just click on each of the tiles above to earn points.
+        In most cases, we'll credit your account immediately; however, please
+        note that points in exchange for purchases may take up to 48 hours to be
+        awarded.
+      </p>
+    </div>
+    <button class="faq-collapsible">How can I redeem my points?</button>
+    <div class="content">
+      <p>
+        Points can be redeemed directly directly from your cart! When you have
+        enough points for a discount, just add items to your cart, click on the
+        Checkout button, and select a discount from the available drop down
+        menu.
+      </p>
+    </div>
+    <button class="faq-collapsible">Do my points expire?</button>
+    <div class="content">
+      <p>Yes! You have up to a year to spend your points.</p>
+    </div>
+    <button class="faq-collapsible">What happens if I return a product?</button>
+    <div class="content">
+      <p>
+        When you return an item, the points you earned associated with that item
+        will be immediately deducted. For example, if you make a purchase for
+        $100, and then return $75 worth of merchandise, we would deduct 75
+        points from your account.
+      </p>
+    </div>
+    <button class="faq-collapsible">How does the referral program work?</button>
+    <div class="content">
+      <p>
+        It's easy! First, make sure you either login or make an account. The
+        scroll downn to the referral section and copy your link to share with
+        friends and family. Once they make a purchase you you can claim your
+        reward. It's that simple!
+      </p>
+    </div>
+  </section>
+</div>
+
+<!-- ACCORDIAN FAQ MENU-->
+
+<script>
+  var coll = document.getElementsByClassName("faq-collapsible");
+  var i;
+
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function () {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.maxHeight) {
+        content.style.maxHeight = null;
+      } else {
+        content.style.maxHeight = content.scrollHeight + "px";
+      }
+    });
+  }
+</script>

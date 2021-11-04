@@ -54,3 +54,9 @@ if (num <= 100) {
     }
   }
 }
+//CHANGE THIS VALUE TO MAKE THE CONDITIONAL BELOW TRUE
+const mystery = "Parodpp7";
+
+if (mystery[0] === "P" && mystery.length > 5 && mystery.indexOf("7") !== -1) {
+  console.log("YOU GOT IT!!!");
+}
